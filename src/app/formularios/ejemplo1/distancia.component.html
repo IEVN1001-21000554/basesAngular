@@ -1,0 +1,18 @@
+<div>
+    <h1>Encuentra distancia entre los puntos A y B</h1>
+    <form [formGroup]="formulario">
+        <div>
+            <label for="">Coordenada1:</label>
+            <input formControlName="coordenadaAx" type="number">
+            <input formControlName="coordenadaAy" type="number">
+        </div>
+        <div>
+            <label for="">Coordenada2:</label>
+            <input formControlName="coordenadaBx" type="number">
+            <input formControlName="coordenadaBy" type="number">
+        </div>
+        
+        <button (click)="calcularCoordenadas()">Calcular</button>
+        <h3>El resultado es: {{resultado2}}</h3>
+    </form>
+</div>
