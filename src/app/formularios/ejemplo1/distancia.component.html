@@ -3,13 +3,13 @@
     <form [formGroup]="formulario">
         <div>
             <label for="">Coordenada1:</label>
-            <input formControlName="coordenadaAx" type="number">
-            <input formControlName="coordenadaAy" type="number">
+            <input formControlName="coordenadaAx" placeholder="x1" type="number">
+            <input formControlName="coordenadaAy" placeholder="y1" type="number">
         </div>
         <div>
             <label for="">Coordenada2:</label>
-            <input formControlName="coordenadaBx" type="number">
-            <input formControlName="coordenadaBy" type="number">
+            <input formControlName="coordenadaBx" placeholder="x2" type="number">
+            <input formControlName="coordenadaBy" placeholder="y2" type="number">
         </div>
         
         <button (click)="calcularCoordenadas()">Calcular</button>

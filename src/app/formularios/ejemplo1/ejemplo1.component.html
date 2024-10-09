@@ -1,6 +1,6 @@
 <div>
     <h1>Sumar dos numeros</h1>
-    <!-- <form [formGroup]="formulario"> -->
+    <form [formGroup]="formulario">
         <div>
             <label for="">Numero1:</label>
             <input formControlName="numero1" type="number">
@@ -12,25 +12,5 @@
         
         <button (click)="sumarNumeros()">Sumar</button>
         <h3>La suma es: {{resultado}}</h3>
-    <!-- </form> -->
-</div>
-
-
- <!-- <div>
-    <h1>Encuentra distancia entre los puntos A y B</h1>
-    <form [formGroup]="formulario">
-        <div>
-            <label for="">Coordenada1:</label>
-            <input formControlName="coordenadaAx" type="number">
-            <input formControlName="coordenadaAy" type="number">
-        </div>
-        <div>
-            <label for="">Coordenada2:</label>
-            <input formControlName="coordenadaBx" type="number">
-            <input formControlName="coordenadaBy" type="number">
-        </div>
-        
-        <button (click)="calcularCoordenadas()">Calcular</button>
-        <h3>La suma es: {{resultado2}}</h3>
     </form>
-</div> -->
+</div>

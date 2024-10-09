@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Datos Personales</h1>
+      <form [formGroup]="formulario">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input formControlName="nombre" type="text">
+        </div>
+        <div>
+          <label for="aPaterno">Apellido Paterno</label>
+          <input formControlName="aPaterno" type="text">
+        </div>
+        <div>
+          <label for="aMaterno">Apellido Materno</label>
+          <input formControlName="aMaterno" type="text">
+        </div>
+
+        <div class="fecha d-flex justify-content-between">
+          <div>
+            <label for="dia">Día</label>
+            <input formControlName="dia" type="number">
+          </div>
+          <div>
+            <label for="mes">Mes</label>
+            <input formControlName="mes" type="number">
+          </div>
+          <div>
+            <label for="anio">Año</label>
+            <input formControlName="anio" type="number">
+          </div>
+        </div>
+
+        <div>
+          <label for="">Sexo</label>
+          <input formControlName="Masculino" type="checkbox"> Masculino
+          <input formControlName="Femenino" type="checkbox"> Femenino
+        </div>
+
+        <br>
+        <button type="button" (click)="calcularSigno()">Calcular Signo</button>
+      </form>
+    </div>
+
+    <div class="col-md-6 text-right">
+      <div class="result-box">
+        <h3>Hola {{nombreC}}</h3>
+        <h3>Tienes {{anios}} años</h3>
+        <h3>Tu signo zodiacal chino es {{signo}}</h3>
+        <img [src]="imagen" alt="{{signo}}">
+      </div>
+    </div>
+  </div>
+</div>
